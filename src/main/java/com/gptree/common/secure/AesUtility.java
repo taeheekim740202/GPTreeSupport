@@ -17,7 +17,7 @@ public class AesUtility {
     /**
      * Key Size
      */
-    private static final int KEY_SIZE = 128;
+    private static final int KEY_SIZE = 256;
 
     /**
      * Hex --> String
