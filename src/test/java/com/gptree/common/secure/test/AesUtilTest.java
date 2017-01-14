@@ -1,17 +1,16 @@
 package com.gptree.common.secure.test;
 
 import com.gptree.common.secure.AesUtility;
-import junit.framework.TestCase;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
-public class AesUtilTest extends TestCase {
+public class AesUtilTest {
 
     @Test
     public void randomSaltTest() {
         AesUtility aesUtility = new AesUtility();
         String randomSalt = aesUtility.randomSalt();
 
-        System.out.println(randomSalt);
         assertNotNull(randomSalt);
     }
 }

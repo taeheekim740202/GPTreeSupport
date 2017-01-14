@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <pages>
+        <page id="PAGE_LOGIN_REQUEST">/login/login.html</page>
+        <page id="PAGE_MAIN_REQUEST">index.html</page>
+    </pages>
+    <sessionCheckExtensions>
+        <sessionCheckExtension>html</sessionCheckExtension>
+        <sessionCheckExtension>gptree</sessionCheckExtension>
+        <sessionCheckIgnoreUrl>index.gptree</sessionCheckIgnoreUrl>
+    </sessionCheckExtensions>
+    <sessions>
+        <session id="SESSION_USER_INFOMATION">userInfomation</session>
+    </sessions>
+</configuration>

@@ -6,6 +6,12 @@
     <!--
         Common Filter
       -->
-    <bean class="com.gptree.common.filter.SessionCheckFilter" name="sessionCheck" />
+    <bean class="com.gptree.common.config.CommonConfigure" name="commonConfigure" factory-method="getInstance"></bean>
+    <bean class="com.gptree.common.filter.SessionCheckFilter" name="sessionCheck">
+        <property name="commonConfigure" ref="commonConfigure"/>
+    </bean>
+    <!--
+        Database
+      -->
 </beans>
 
